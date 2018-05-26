@@ -7,6 +7,9 @@ body {
   margin: 0;
   background: #e0e0e0; }
 
+.pic-upload-area {
+  min-height: calc(100vh - 100px); }
+
 .site-header {
   padding: 0.9375rem;
   background: #999; }
