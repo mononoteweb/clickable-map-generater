@@ -1,0 +1,15 @@
+{
+  "name": "clickable-map-generater",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://mononoteweb@github.com/mononoteweb/clickable-map-generater.git",
+  "author": "mononoteweb <web@mononote,me>",
+  "license": "MIT",
+  "scripts": {
+    "pug": "pug src/pug/ --hierarchy -o dest -w"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "https://github.com/pugjs/pug-cli.git"
+  }
+}
