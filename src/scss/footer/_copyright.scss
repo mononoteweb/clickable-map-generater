@@ -1,0 +1,11 @@
+.site-footer__copyright-area {
+	padding: #{(10 / $font-size-num)}rem;
+	background: #999;
+	font-size: #{(12 / $font-size-num)}rem;
+	text-align: center;
+}
+
+.site-footer__copyright-link {
+	color: #424242;
+	text-decoration: none;
+}

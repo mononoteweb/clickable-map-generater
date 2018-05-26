@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html {
+  font: 16px/1.72 Roboto, YuGothic, "Yu Gothic", "Yu Gothic local", "Hiragino Sans", "メイリオ", Meiryo, sans-serif;
+  color: #424242; }
+
+body {
+  margin: 0;
+  background: #e0e0e0; }
+
+.site-header {
+  padding: 0.9375rem;
+  background: #999; }
+
+.site-header__logo-img {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: .12em; }
+
+.site-footer__copyright-area {
+  padding: 0.625rem;
+  background: #999;
+  font-size: 0.75rem;
+  text-align: center; }
+
+.site-footer__copyright-link {
+  color: #424242;
+  text-decoration: none; }

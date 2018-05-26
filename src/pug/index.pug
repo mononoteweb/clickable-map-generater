@@ -15,11 +15,20 @@ html.no-js(lang="ja" itemscope itemtype="http://schema.org/WebPage")
 		meta(name="description" itemprop="description" content="")
 		meta(property="og:description" content="")
 		meta(property="og:type" content="website")
-		meta(property="og:url" content="https://")
+		meta(property="og:url" content="https://clickable-map.monoweb.jp")
 
 		meta(content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR")
-		meta
+		link(rel="stylesheet" href="/common-mw/css/style.css")
 	body
 		.page-wrapper
 			header#site-header.site-header(role="banner")
+				.site-header__logo
+					h1.site-header__logo-img Clickable Map Generater
 			footer#site-footer.site-footer(role="contentinfo")
+				.site-footer__copyright-area
+					small
+						span &copy;
+						span(itemprop="copyrightYear" datetime="2018") 2018
+						span(itemprop="copyrightHolder")
+							a.site-footer__copyright-link(href="https://monoweb.jp") monoweb.jp
+		script(src="/common-mw/js/app.bundle.js")

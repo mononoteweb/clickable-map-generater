@@ -1,15 +1,22 @@
 {
-  "name": "clickable-map-generater",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://mononoteweb@github.com/mononoteweb/clickable-map-generater.git",
-  "author": "mononoteweb <web@mononote,me>",
-  "license": "MIT",
-  "scripts": {
-    "pug": "pug src/pug/ --hierarchy -o dest -w"
-  },
-  "devDependencies": {
-    "pug": "^2.0.3",
-    "pug-cli": "https://github.com/pugjs/pug-cli.git"
-  }
+	"name": "clickable-map-generater",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://mononoteweb@github.com/mononoteweb/clickable-map-generater.git",
+	"author": "mononoteweb <web@mononote,me>",
+	"license": "MIT",
+	"scripts": {
+		"pug": "pug src/pug/ --hierarchy -o dest -w",
+		"script": "webpack -w",
+		"style": "node-sass ./src/scss/ -o ./dest/common-mw/css -w"
+	},
+	"devDependencies": {
+		"node-sass": "^4.9.0",
+		"pug": "^2.0.3",
+		"pug-cli": "https://github.com/pugjs/pug-cli.git",
+		"ts-loader": "^4.3.0",
+		"typescript": "^2.8.3",
+		"webpack": "^4.9.1",
+		"webpack-cli": "^2.1.4"
+	}
 }
