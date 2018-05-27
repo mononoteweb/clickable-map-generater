@@ -2,18 +2,18 @@
  * ドラッグしたときの関数
  * @type {{handleDragOver}}
  */
-const handleDragOver = require('handleDragOver');
+import { handleDragOver } from './handleDragOver';
 
 /**
  * ドロップしたときの関数
  * @type {{handleDragDropFile}}
  */
-const handleDragDropFile = require('handleDragDropFile');
+import { handleDragDropFile } from './handleDragDropFile';
 
 /**
  *
  */
-export function picUpLoad () {
+export const picUpLoad = (): void => {
 	/**
 	 * 画像をドロップするエリア
 	 * @type {HTMLElement | null}

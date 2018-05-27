@@ -2,13 +2,13 @@
  * 画像読み込みの関数
  * @type {{readImage}}
  */
-const readImage = require('readImage');
+import { readImage } from './readImage';
 
 /**
  * 画像をドロップしたときの挙動
  * @param e
  */
-export function handleDragDropFile (e) {
+export const handleDragDropFile = (e): void => {
 	e.stopPropagation();
 	e.preventDefault();
 
@@ -32,6 +32,8 @@ export function handleDragDropFile (e) {
 	 * @private
 	 */
 	const _reader = new FileReader();
+
+	_reader.readAsDataURL(_file);
 
 	_reader.onload = function () {
 		readImage(_reader);

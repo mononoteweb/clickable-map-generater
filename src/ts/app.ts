@@ -1,5 +1,3 @@
-declare function require(x: string): any;
-
-const picUpLoad = require('picUpLoad');
+import { picUpLoad } from './picUpLoad';
 
 picUpLoad();

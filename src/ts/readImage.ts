@@ -1,24 +1,24 @@
 /**
  *
  * @param _reader
- * @param _printImgId
- * @param _printDataUrlId
  */
-export function readImage(_reader) {
+export const readImage = (_reader): void => {
+
+	console.log(_reader);
 
 	/**
 	 * レンダリングをリセットする
 	 * @type {(() => void) | Event}
 	 * @private
 	 */
-	const _resultDataUrl = _reader.reset;
+	const _resultDataUrl = _reader.result;
 
 	/**
 	 * 画像を描画するDOM
 	 * @type {HTMLElement | null}
 	 * @private
 	 */
-	const _img = document.getElementById('pic-upload-img');
+	const _img = document.getElementById('pic-upload__img');
 
 	/**
 	 *
