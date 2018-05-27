@@ -35,7 +35,7 @@ export const handleDragDropFile = (e): void => {
 
 	_reader.readAsDataURL(_file);
 
-	_reader.onload = function () {
+	_reader.onload = () => {
 		readImage(_reader);
 	}
 }

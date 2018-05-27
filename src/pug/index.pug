@@ -12,8 +12,8 @@ html.no-js(lang="ja" itemscope itemtype="http://schema.org/WebPage")
 		meta(itemprop="headline" content="Clickable Map Generater")
 		meta(itemprop="name" content="Clickable Map Generater")
 
-		meta(name="description" itemprop="description" content="")
-		meta(property="og:description" content="")
+		meta(name="description" itemprop="description" content="レスポンシブなクリッカブルマップを作成するジェネレーター。")
+		meta(property="og:description" content="レスポンシブなクリッカブルマップを作成するジェネレーター。")
 		meta(property="og:type" content="website")
 		meta(property="og:url" content="https://clickable-map.monoweb.jp")
 
@@ -25,10 +25,12 @@ html.no-js(lang="ja" itemscope itemtype="http://schema.org/WebPage")
 				.site-header__logo
 					h1.site-header__logo-img Clickable Map Generater
 			main(itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/WebPageElement" role="main")
-				#pic-upload-area.pic-upload-area
-					p#pic-upload__txt ここに画像をドロップ
-					img#pic-upload__img(src="" alt="")
-				.src-write-area
+				.upload-wrapper
+					#pic-upload-area.pic-upload-area
+						p#pic-upload__txt ここに画像をドロップ
+						img#pic-upload__img(src="" alt="")
+					.src-write-area
+						textarea#src-write-area__form
 			footer#site-footer.site-footer(role="contentinfo")
 				.site-footer__copyright-area
 					small

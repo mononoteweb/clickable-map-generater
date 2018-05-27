@@ -1,5 +1,10 @@
+.upload-wrapper {
+	display: flex;
+}
+
 .pic-upload-area {
 	min-height: calc(100vh - 100px);
+	flex-grow: 1;
 }
 
 .src-write-area {

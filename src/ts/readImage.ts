@@ -4,8 +4,6 @@
  */
 export const readImage = (_reader): void => {
 
-	console.log(_reader);
-
 	/**
 	 * レンダリングをリセットする
 	 * @type {(() => void) | Event}
@@ -21,7 +19,7 @@ export const readImage = (_reader): void => {
 	const _img = document.getElementById('pic-upload__img');
 
 	/**
-	 *
+	 * _imgに描画する
 	 * @type {Attr}
 	 * @private
 	 */
@@ -29,4 +27,15 @@ export const readImage = (_reader): void => {
 
 	_src.value = _resultDataUrl;
 	_img.setAttributeNode(_src);
-}
+
+	/**
+	 * 画像をアップロードする場所を示すテキスト
+	 * @type {HTMLElement | null}
+	 * @private
+	 */
+	const _label = document.getElementById('pic-upload__txt');
+	_label.style.display = 'none';
+
+	const _header = document.getElementById('site-header');
+	_header.classList.add('this-active');
+};

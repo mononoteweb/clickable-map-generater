@@ -7,19 +7,31 @@ body {
   margin: 0;
   background: #e0e0e0; }
 
+.upload-wrapper {
+  display: flex; }
+
 .pic-upload-area {
-  min-height: calc(100vh - 100px); }
+  min-height: calc(100vh - 100px);
+  flex-grow: 1; }
 
 .site-header {
-  padding: 0.9375rem;
+  position: relative;
   background: #999; }
 
 .site-header__logo-img {
-  margin: 0;
+  display: inline-block;
+  margin: 0 0 0 50%;
+  padding: 0.9375rem 0;
+  transform: translateX(-50%);
   color: #fff;
   font-size: 1rem;
   text-align: center;
-  letter-spacing: .12em; }
+  letter-spacing: .12em;
+  transition: margin .2s ease, padding .2s ease, transform .2s ease; }
+  .this-active .site-header__logo-img {
+    margin: 0;
+    padding: 0;
+    transform: translateX(0); }
 
 .site-footer__copyright-area {
   padding: 0.625rem;
